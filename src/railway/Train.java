@@ -71,33 +71,24 @@ public class Train {
     }
     public void display(Ticket t)
     {
-        System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus()+"Ticket status:"+ticketStatus(t).indexOf(t));
-    }
-    public ArrayList<Ticket> ticketStatus(Ticket t)
-    {
-        if(confirmedTickets.contains(t))
-            return confirmedTickets;
-        else if (racTickets.contains(t))
-            return racTickets;
-        else
-            return waitingTickets;
+        System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus());
     }
     public void displayAll()
     {
         System.out.println("Confirmed tickets:");
         for (Ticket t:confirmedTickets)
-            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus()+"Ticket status:"+ticketStatus(t).indexOf(t));
+            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus());
         System.out.println("Rac Tickets:");
         for (Ticket t:racTickets)
-            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus()+"Ticket status:"+ticketStatus(t).indexOf(t));
+            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus());
         System.out.println("Rac Tickets:");
         System.out.println("Waiting tickets");
         for (Ticket t:waitingTickets)
-            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus()+"Ticket status:"+ticketStatus(t).indexOf(t));
+            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus());
         System.out.println("Rac Tickets:");
         System.out.println("All applied tickets:");
         for (Ticket t:applyTickets)
-            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus()+" "+"Ticket status:"+ticketStatus(t).indexOf(t));
+            System.out.println("Name:"+t.getName()+" "+"Age:"+t.getAge()+" "+"Gender:"+t.getGender()+" "+"BerthPreference:"+t.getBerthPreference()+" "+"Booked Status:"+t.getConfirmationStatus());
         System.out.println("Rac Tickets:");
     }
     public void availableTicket()
