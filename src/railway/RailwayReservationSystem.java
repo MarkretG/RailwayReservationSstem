@@ -9,7 +9,6 @@ public class RailwayReservationSystem {
         System.out.println("welcome to railway reservation system");
         System.out.println("Enter your choice");
         System.out.println("1.Booking Tickets"+" "+"2.cancel Tickets"+"3.print all booked tickets"+" "+"4.print available tickets"+" "+"5.exit");
-        menu:
         while (true)
         {
             int ch=sc.nextInt();
